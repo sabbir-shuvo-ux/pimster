@@ -1,0 +1,435 @@
+:root {
+  --roboto: "Roboto", sans-serif;
+  --russ: "Russo One", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* basic css */
+body {
+  font-family: var(--russ);
+}
+section {
+  height: 100vh;
+  width: 100%;
+  padding: 4rem 0;
+  overflow-x: hidden;
+}
+
+/* divider */
+.divider_color_one {
+  fill: #221f1c;
+}
+
+.divider_color_two {
+  fill: #e1be00;
+}
+
+.divider_main {
+  background: #e1be00;
+}
+
+/* Hero */
+.hero {
+  background: url("../img/heromain.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero .hero_title {
+  color: #e1be00;
+  font-size: 5rem;
+}
+
+@media (max-width: 376px) {
+  .hero .hero_title {
+    font-size: 3.5rem;
+  }
+}
+
+/* wir section */
+.wir_section {
+  padding-top: 5rem;
+  background: #221f1c;
+  position: relative;
+  z-index: 0;
+  height: fit-content;
+  color: white;
+}
+.wir_img_last {
+  position: relative;
+  margin-left: -50px;
+  z-index: -1;
+  top: 36px;
+}
+
+.wir_img_middle {
+  position: relative;
+  top: -76px;
+}
+
+.wir_img_start {
+  position: relative;
+  margin-right: -50px;
+  z-index: -1;
+}
+
+.wir_imgs img {
+  width: 200px;
+  aspect-ratio: 1/1;
+}
+
+.wir_title_section h1 {
+  font-size: 6rem;
+  line-height: 86px;
+  letter-spacing: 10px;
+  color: #e1be00;
+}
+
+.wir_title_section h1:first-child {
+  -webkit-text-stroke: 1px #e1be00;
+  color: transparent;
+}
+
+.wir_content_section p {
+  font-size: 13px;
+  font-family: var(--roboto);
+  color: #e1be00;
+  opacity: 0.6;
+}
+.wir_content_section {
+  margin-top: 7rem;
+  padding-right: 2rem;
+}
+.wir_content_section h4 {
+  color: #e1be00;
+  font-size: 22px;
+}
+.wir_imgs {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+  .wir_imgs {
+    margin-top: 7rem;
+  }
+  .wir_content_section {
+    margin-top: 5rem;
+    padding: 0 1rem;
+  }
+  .wir_title_section h1 {
+    font-size: 5rem;
+    line-height: 68px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .wir_title_section h1 {
+    font-size: 4rem;
+    line-height: 55px;
+  }
+
+  .wir_imgs img {
+    width: 150px;
+  }
+}
+
+@media (max-width: 422px) {
+  .wir_title_section h1 {
+    font-size: 3rem;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 362px) {
+  .wir_imgs img {
+    width: 130px;
+  }
+  .wir_content_section {
+    padding: 0 0.5rem;
+  }
+  .wir_title_section h1 {
+    font-size: 2.5rem;
+    line-height: 32px;
+  }
+}
+
+/* machen section */
+.machen {
+  background: #e1be00;
+  height: fit-content;
+}
+
+.color_for_machen {
+  -webkit-text-stroke-color: #221f1c !important;
+}
+.color_for_machen_two {
+  color: #221f1c !important;
+}
+
+.card_icon {
+  width: 40px;
+  margin: 0 auto 1rem;
+}
+.co_card:last-child {
+  border-right: 1.5px solid #221f1c;
+}
+.co_card {
+  border: 1.5px solid #221f1c;
+  text-align: center;
+  padding: 3rem 1rem;
+  border-right: none;
+  flex-basis: 100%;
+}
+
+.costume_card_main {
+  display: flex;
+  justify-content: end;
+  margin-top: 4rem;
+}
+
+.card_title {
+  font-size: 1.3rem;
+}
+
+.card_content ul li {
+  font-size: 14px;
+  font-family: var(--roboto);
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .costume_card_main {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 656px) {
+  .costume_card_main {
+    flex-direction: column;
+  }
+  .co_card {
+    margin: 0 auto;
+    flex-basis: 0;
+    width: 300px;
+    border: 1.5px solid #221f1c !important;
+    border-top-width: 0px !important;
+  }
+
+  .co_card:first-child {
+    border: 1.5px solid #221f1c !important;
+  }
+}
+
+/* athleten_section */
+.athleten_section {
+  height: fit-content;
+  background-color: #221f1c;
+}
+
+.athleten_title {
+  color: #e1be00;
+}
+
+.athleten_card_img img {
+  width: 220px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.athleten_card_content {
+  text-align: center;
+}
+
+.athleten_card_img {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.athleten_card_content h4 {
+  color: #e1be00;
+  font-size: 18px;
+  padding-bottom: 0.5rem;
+}
+
+.athleten_card_content p {
+  color: #e1be00;
+  opacity: 0.6;
+  font-family: var(--roboto);
+  font-size: 13px;
+  max-width: 80%;
+  margin: 0 auto 1rem;
+  text-align: center;
+}
+
+.athleten_card_content a {
+  color: #e1be00;
+  border: 1px solid #e1be00;
+  padding: 0.5rem 1rem;
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  opacity: 0.6;
+  border-radius: 2rem;
+  font-family: var(--roboto);
+  font-size: 14px;
+  text-decoration: none;
+  transition: 300ms;
+}
+.athleten_card_content a:hover {
+  color: #221f1c;
+  background: #e1be00;
+  width: 58%;
+  font-weight: 900;
+}
+
+/* UNSERE */
+.unsere {
+  background: #e1be00;
+  height: fit-content;
+}
+
+.unsere_title_one {
+  -webkit-text-stroke-color: #221f1c !important;
+}
+.unsere_title_two {
+  color: #221f1c !important;
+}
+
+.sponsore_gallary {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5rem;
+  margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  .sponsore_gallary {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 764px) {
+  .sponsore_gallary {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 320px) {
+  .sponsore_gallary {
+    gap: 1rem;
+  }
+}
+
+/* wollen */
+.wollen {
+  height: fit-content;
+  padding-top: 0;
+  background: #221f1c;
+}
+
+.wollen_img_container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.wollen_img_container img {
+  width: 150px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.wollen_title {
+  text-align: center;
+  color: #e1be00;
+  letter-spacing: 4px;
+}
+
+.wollen_cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7rem;
+  margin-top: 1.5rem;
+}
+.wollen_card h4 {
+  font-size: 18px;
+  text-align: center;
+  color: #e1be00;
+  margin-bottom: 0;
+}
+
+.wollen_card a,
+.wollen_card span {
+  text-decoration: none;
+  color: #e1be00;
+  opacity: 0.6;
+  font-size: 12px;
+  text-align: center;
+}
+
+.social_icons_wollen {
+  display: inline-flex;
+  gap: 8px;
+  font-size: 14px !important;
+  padding-left: 2px;
+}
+
+@media (max-width: 767px) {
+  .wollen_card h4 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 542px) {
+  .wollen_cards {
+    gap: 3rem;
+  }
+  .wollen_card h4 {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 397px) {
+  .wollen_card a,
+  .wollen_card span {
+    font-size: 10px;
+  }
+  .wollen_cards {
+    gap: 10px;
+  }
+  .wollen_img_container img {
+    width: 120px;
+  }
+  .wollen_title {
+    font-size: 22px;
+  }
+}
+
+/* footer */
+.footer {
+  padding: 4rem 0;
+  background-color: #e1be00;
+}
+
+.bottom_section {
+  padding: 1rem 0;
+  background: #e1be00;
+}
+
+.bottom_text_color a {
+  color: #221f1c;
+  opacity: 0.6;
+  font-size: 11px;
+  text-decoration: none;
+}
